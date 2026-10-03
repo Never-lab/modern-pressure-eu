@@ -2,11 +2,11 @@
 Name = MortgageStress
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(MortgageStress,-0.95,0.92);CreateGrudge(RentStrikeWave,-0.35,0.85);CreateGrudge(MiddleIncome,-0.14,0.83);CreateGrudge(GDP,-0.09,0.83);
+OnImplement = CreateGrudge(MortgageStress,-0.95,0.90);CreateGrudge(RentStrikeWave,-0.45,0.82);CreateGrudge(MiddleIncome,-0.24,0.80);CreateGrudge(GDP,-0.16,0.80);CreateGrudge(_All_,-0.12,0.82);CreateGrudge(PovertyRate,0.10,0.84);
 
 [influences]
-0 = _random_,0,0.15
-1 = DebtCrisis,0+(0.32*x)
-2 = _global_interest_rates_,0+(0.25*x)
-3 = PovertyRate,0+(0.15*x)
+0 = _random_,0.05,0.28
+1 = DebtCrisis,0+(0.45*x)
+2 = _global_interest_rates_,0+(0.35*x)
+3 = PovertyRate,0+(0.22*x)
 4 = _prereq_,_prereq_mod_eu

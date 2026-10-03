@@ -2,11 +2,11 @@
 Name = HeatGridFailure
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(HeatGridFailure,-0.95,0.92);CreateGrudge(EnergyPriceSpike,-0.35,0.85);CreateGrudge(GDP,-0.08,0.83);CreateGrudge(Poor,-0.12,0.83);CreateGrudge(Environment,-0.06,0.86);
+OnImplement = CreateGrudge(HeatGridFailure,-0.95,0.90);CreateGrudge(EnergyPriceSpike,-0.45,0.82);CreateGrudge(GDP,-0.18,0.80);CreateGrudge(Poor,-0.22,0.80);CreateGrudge(Environment,-0.12,0.84);CreateGrudge(_All_,-0.10,0.82);CreateGrudge(EnergyEfficiency,-0.10,0.82);
 
 [influences]
-0 = _random_,0,0.15
-1 = AverageTemperature,0+(0.32*x)
-2 = Environment,0.24-(0.24*x)
-3 = EnergyEfficiency,0.12-(0.12*x)
+0 = _random_,0.05,0.28
+1 = AverageTemperature,0+(0.45*x)
+2 = Environment,0.30-(0.30*x)
+3 = EnergyEfficiency,0.18-(0.18*x)
 4 = _prereq_,_prereq_mod_eu
