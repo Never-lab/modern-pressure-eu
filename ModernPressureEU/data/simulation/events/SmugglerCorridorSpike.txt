@@ -2,7 +2,7 @@
 Name = SmugglerCorridorSpike
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(SmugglerCorridorSpike,-0.92,0.88);CreateGrudge(ReceptionCenterRiot,-0.15,0.55);CreateGrudge(IllegalImmigration,0.20,0.82);CreateGrudge(Crime,0.14,0.80);CreateGrudge(Patriot,-0.12,0.80);CreateGrudge(ForeignRelations,-0.10,0.82);CreateGrudge(BorderProcessingCollapse,-0.32,0.75);
+OnImplement = CreateGrudge(SmugglerCorridorSpike,-0.92,0.88);CreateGrudge(ReceptionCenterRiot,-0.15,0.55);CreateGrudge(IllegalImmigration,0.20,0.82);CreateGrudge(Crime,0.14,0.80);CreateGrudge(Patriot,-0.12,0.80);CreateGrudge(ForeignRelations,-0.10,0.82);CreateGrudge(BorderProcessingCollapse,-0.32,0.75);CreateGrudge(CropFailureDrought,-0.45,0.80);CreateGrudge(CoastalFloodShock,-0.45,0.80);CreateGrudge(HomelessCampCrisis,-0.45,0.80);CreateGrudge(LandlordExodus,-0.45,0.80);
 
 [influences]
 0 = _random_,0.04,0.24

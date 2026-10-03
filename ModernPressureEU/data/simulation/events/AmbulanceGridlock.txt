@@ -1,0 +1,11 @@
+[config]
+Name = AmbulanceGridlock
+Texture = event25.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(AmbulanceGridlock,-0.90,0.90);CreateGrudge(CareHomeOutbreak,-0.55,0.85);CreateGrudge(Health,-0.16,0.82);CreateGrudge(HealthcareDemand,0.14,0.82);CreateGrudge(_All_,-0.08,0.84);CreateGrudge(HospitalWinterCrisis,-0.40,0.80);
+
+[influences]
+0 = _random_,0.03,0.18
+1 = HealthcareDemand,0+(0.34*x)
+2 = Health,0.26-(0.26*x)
+3 = _prereq_,_prereq_eu

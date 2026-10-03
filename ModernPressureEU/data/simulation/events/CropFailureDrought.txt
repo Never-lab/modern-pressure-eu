@@ -2,7 +2,7 @@
 Name = CropFailureDrought
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(CropFailureDrought,-0.92,0.88);CreateGrudge(CoastalFloodShock,-0.15,0.55);CreateGrudge(FoodPrice,0.20,0.82);CreateGrudge(Farmers,-0.22,0.80);CreateGrudge(Poor,-0.16,0.80);CreateGrudge(GDP,-0.12,0.82);CreateGrudge(HeatGridFailure,-0.35,0.75);CreateGrudge(EnergyPriceSpike,-0.30,0.75);
+OnImplement = CreateGrudge(CropFailureDrought,-0.92,0.88);CreateGrudge(CoastalFloodShock,-0.15,0.55);CreateGrudge(FoodPrice,0.20,0.82);CreateGrudge(Farmers,-0.22,0.80);CreateGrudge(Poor,-0.16,0.80);CreateGrudge(GDP,-0.12,0.82);CreateGrudge(HeatGridFailure,-0.35,0.75);CreateGrudge(EnergyPriceSpike,-0.30,0.75);CreateGrudge(HomelessCampCrisis,-0.45,0.80);CreateGrudge(LandlordExodus,-0.45,0.80);CreateGrudge(ReceptionCenterRiot,-0.45,0.80);CreateGrudge(SmugglerCorridorSpike,-0.45,0.80);
 
 [influences]
 0 = _random_,0.04,0.24

@@ -1,0 +1,11 @@
+[config]
+Name = PublicDataLeak
+Texture = event_flashcrash.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(PublicDataLeak,-0.90,0.90);CreateGrudge(AutomationStrike,-0.55,0.85);CreateGrudge(_percept_trust,-0.18,0.82);CreateGrudge(Liberal,-0.10,0.80);CreateGrudge(Technology,-0.08,0.84);
+
+[influences]
+0 = _random_,0.03,0.18
+1 = Technology,0+(0.28*x)
+2 = _percept_trust,0.24-(0.24*x)
+3 = _prereq_,_prereq_eu

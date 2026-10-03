@@ -1,0 +1,11 @@
+[config]
+Name = AutomationStrike
+Texture = event_flashcrash.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(AutomationStrike,-0.90,0.90);CreateGrudge(PublicDataLeak,-0.55,0.85);CreateGrudge(Unemployment,0.14,0.82);CreateGrudge(GDP,-0.10,0.82);CreateGrudge(Technology,-0.08,0.84);CreateGrudge(AILayoffBacklash,-0.40,0.80);
+
+[influences]
+0 = _random_,0.03,0.18
+1 = Unemployment,0+(0.30*x)
+2 = Technology,0+(0.22*x)
+3 = _prereq_,_prereq_eu
