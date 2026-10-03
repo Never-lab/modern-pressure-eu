@@ -1,0 +1,12 @@
+[config]
+Name = LandlordExodus
+Texture = event_flashcrash.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(LandlordExodus,-0.92,0.88);CreateGrudge(HomelessCampCrisis,-0.15,0.55);CreateGrudge(PrivateHousing,-0.20,0.82);CreateGrudge(Homelessness,0.14,0.80);CreateGrudge(Capitalist,-0.16,0.80);CreateGrudge(GDP,-0.10,0.82);CreateGrudge(RentStrikeWave,-0.30,0.75);CreateGrudge(MortgageStress,-0.32,0.75);
+
+[influences]
+0 = _random_,0.04,0.24
+1 = PrivateHousing,0.30-(0.30*x)
+2 = GDP,0.18-(0.18*x)
+3 = Homelessness,0+(0.22*x)
+4 = _prereq_,_prereq_eu

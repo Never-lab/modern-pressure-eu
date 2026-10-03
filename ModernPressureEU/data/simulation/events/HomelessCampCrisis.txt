@@ -1,0 +1,12 @@
+[config]
+Name = HomelessCampCrisis
+Texture = event_flashcrash.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(HomelessCampCrisis,-0.92,0.88);CreateGrudge(LandlordExodus,-0.15,0.55);CreateGrudge(Homelessness,0.18,0.82);CreateGrudge(Poor,-0.20,0.80);CreateGrudge(Crime,0.10,0.82);CreateGrudge(_All_,-0.08,0.82);CreateGrudge(RentStrikeWave,-0.35,0.75);CreateGrudge(MortgageStress,-0.30,0.75);
+
+[influences]
+0 = _random_,0.04,0.24
+1 = Homelessness,0+(0.42*x)
+2 = PovertyRate,0+(0.28*x)
+3 = PrivateHousing,0.20-(0.20*x)
+4 = _prereq_,_prereq_eu
