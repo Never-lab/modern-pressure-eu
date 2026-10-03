@@ -9,4 +9,4 @@ OnImplement = CreateGrudge(DeepfakeScandal,-0.95,0.90);CreateGrudge(AILayoffBack
 1 = FakeNews,0+(0.40*x)
 2 = Technology,0+(0.32*x)
 3 = Democracy,0.24-(0.24*x)
-4 = _prereq_,_prereq_mod_eu
+4 = _prereq_,_prereq_eu

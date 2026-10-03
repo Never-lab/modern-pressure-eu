@@ -9,4 +9,4 @@ OnImplement = CreateGrudge(HospitalWinterCrisis,-0.95,0.90);CreateGrudge(BorderP
 1 = HealthcareDemand,0+(0.45*x)
 2 = Health,0.32-(0.32*x)
 3 = HospitalOvercrowding,0+(0.30*x)
-4 = _prereq_,_prereq_mod_eu
+4 = _prereq_,_prereq_eu

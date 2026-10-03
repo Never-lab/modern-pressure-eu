@@ -9,4 +9,4 @@ OnImplement = CreateGrudge(EnergyPriceSpike,-0.95,0.90);CreateGrudge(HeatGridFai
 1 = OilPrice,0+(0.50*x)
 2 = EnergyEfficiency,0.28-(0.28*x)
 3 = PrivateEnergy,0+(0.20*x)
-4 = _prereq_,_prereq_mod_eu
+4 = _prereq_,_prereq_eu

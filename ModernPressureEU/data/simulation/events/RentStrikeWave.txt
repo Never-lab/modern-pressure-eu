@@ -9,4 +9,4 @@ OnImplement = CreateGrudge(RentStrikeWave,-0.95,0.90);CreateGrudge(MortgageStres
 1 = Homelessness,0+(0.48*x)
 2 = PrivateHousing,0.28-(0.28*x)
 3 = PovertyRate,0+(0.24*x)
-4 = _prereq_,_prereq_mod_eu
+4 = _prereq_,_prereq_eu

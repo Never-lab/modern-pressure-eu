@@ -9,4 +9,4 @@ OnImplement = CreateGrudge(MortgageStress,-0.95,0.90);CreateGrudge(RentStrikeWav
 1 = DebtCrisis,0+(0.45*x)
 2 = _global_interest_rates_,0+(0.35*x)
 3 = PovertyRate,0+(0.22*x)
-4 = _prereq_,_prereq_mod_eu
+4 = _prereq_,_prereq_eu

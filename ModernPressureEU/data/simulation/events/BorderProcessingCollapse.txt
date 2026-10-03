@@ -9,4 +9,4 @@ OnImplement = CreateGrudge(BorderProcessingCollapse,-0.95,0.90);CreateGrudge(Hos
 1 = Immigration,0+(0.40*x)
 2 = IllegalImmigration,0+(0.40*x)
 3 = RacialTension,0+(0.26*x)
-4 = _prereq_,_prereq_mod_eu
+4 = _prereq_,_prereq_eu
