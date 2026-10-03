@@ -1,0 +1,12 @@
+[config]
+Name = BorderProcessingCollapse
+Texture = event25.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(BorderProcessingCollapse,-0.95,0.92);CreateGrudge(HospitalWinterCrisis,-0.35,0.85);CreateGrudge(Immigration,0.12,0.83);CreateGrudge(Conservatives,-0.12,0.84);CreateGrudge(Liberal,-0.08,0.83);
+
+[influences]
+0 = _random_,0,0.15
+1 = Immigration,0+(0.28*x)
+2 = IllegalImmigration,0+(0.28*x)
+3 = RacialTension,0+(0.18*x)
+4 = _prereq_,_prereq_mod_eu

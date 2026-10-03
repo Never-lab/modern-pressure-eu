@@ -1,0 +1,12 @@
+[config]
+Name = AILayoffBacklash
+Texture = event25.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(AILayoffBacklash,-0.95,0.92);CreateGrudge(DeepfakeScandal,-0.35,0.85);CreateGrudge(Unemployment,0.10,0.83);CreateGrudge(Technology,-0.08,0.84);CreateGrudge(Liberal,-0.10,0.83);
+
+[influences]
+0 = _random_,0,0.15
+1 = Technology,0+(0.28*x)
+2 = IndustrialAutomation,0+(0.28*x)
+3 = Unemployment,0+(0.20*x)
+4 = _prereq_,_prereq_mod_eu

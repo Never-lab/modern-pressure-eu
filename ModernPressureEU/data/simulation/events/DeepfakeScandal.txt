@@ -1,0 +1,12 @@
+[config]
+Name = DeepfakeScandal
+Texture = event25.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(DeepfakeScandal,-0.95,0.92);CreateGrudge(AILayoffBacklash,-0.35,0.85);CreateGrudge(_percept_trust,-0.16,0.86);CreateGrudge(Liberal,-0.10,0.83);
+
+[influences]
+0 = _random_,0,0.15
+1 = FakeNews,0+(0.28*x)
+2 = Technology,0+(0.25*x)
+3 = Democracy,0.18-(0.18*x)
+4 = _prereq_,_prereq_mod_eu

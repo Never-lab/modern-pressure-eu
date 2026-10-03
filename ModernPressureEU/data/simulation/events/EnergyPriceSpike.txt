@@ -1,0 +1,12 @@
+[config]
+Name = EnergyPriceSpike
+Texture = event25.png
+GUISound = DM4_CoastalOilSpill.wav
+OnImplement = CreateGrudge(EnergyPriceSpike,-0.95,0.92);CreateGrudge(HeatGridFailure,-0.35,0.85);CreateGrudge(GDP,-0.10,0.83);CreateGrudge(Capitalist,-0.10,0.83);CreateGrudge(Poor,-0.14,0.83);
+
+[influences]
+0 = _random_,0,0.15
+1 = OilPrice,0+(0.38*x)
+2 = EnergyEfficiency,0.20-(0.20*x)
+3 = PrivateEnergy,0+(0.12*x)
+4 = _prereq_,_prereq_mod_eu
