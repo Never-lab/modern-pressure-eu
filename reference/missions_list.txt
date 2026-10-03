@@ -1,0 +1,10 @@
+﻿australia
+canada
+france
+germany
+italy
+japan
+southkorea
+spain
+uk
+usa

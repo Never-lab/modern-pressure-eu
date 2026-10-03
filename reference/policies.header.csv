@@ -1,0 +1,2 @@
+﻿,name,slider,flags,opposites,introduce,cancel,raise,lower,department,prereqs,mincost,maxcost,costfunction,cost multiplier,implementation,minincome,maxincome,incomefunction,incomemultiplier,nationalisation GDP percentage,,,,,,,,,,,,,,,,,,
+#,AbortionLaw,abortion,UNCANCELLABLE,,0,0,31,22,PUBLICSERVICES,,0,0,0+(1.0*x),,1,0,0,0+(1.0*x),,,#Effects,"Religious,0.2-(x^5)","Liberal,0.2+(x-1)^5","Conservatives,0.2-(0.4*x)","Population,0.05-(0.1*x),16","_global_liberalism,0.20*(x^2)-0.06,16","GenderEquality,-0.1+(0.2*x)",,,,,,,,,,,

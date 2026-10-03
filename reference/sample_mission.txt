@@ -1,0 +1,155 @@
+[config]
+currency = "€"
+population = 32636
+economic_cycle_start = 0.2
+min_income = 0
+max_income = 160000
+name  = france
+names_file = "data/names/francenames.txt"
+flag = "flag_france.png"
+map = "map_france.svg"
+GUID = 4
+fx_rate_to_pound = 1.11
+apathy = 0.51
+starting_debt = 2438500
+min_gdp = 1000000
+max_gdp = 3200000
+wealth_mod = 4.098
+minor_parties = 1
+difficulty = 3
+votingsystem = FPTP
+
+[policies]
+AdultEducationSubsidies = 0.6
+AgricultureSubsidies = 0.7
+AirlineTax = 0.02
+AlcoholLaw = 0.5
+AlcoholTax = 0.02
+AntibioticsBan = 0.6
+AntiCorruptionAgency = 0.5
+ArtsSubsidies = 0.78
+bantobacco = 0.25
+BanSundayShopping = 0.1
+BicycleSubsidies = 0.1
+BiofuelSubsidies = 0.5
+BorderControls = 0.5
+BusLanes = 0.6
+BusSubsidies = 0.25
+CapitalGainsTax = 0.18
+CarbonCaptureAndStorage = 0.1
+CarbonTax = 0.29
+CarEmmissionsLimits = 0.5
+CCTVCameras = 0.3
+CharityTaxRelief = 0.34
+ChildBenefit = 0.4
+CitizenshipTests = 0.25
+CleanEnergySubsidies = 0.1
+CommunityPolicing = 0.25
+CompulsoryForeignLanguageClasses = 0.35
+ConsumerRights = 0.5
+CorporationTax = 0.62
+DisabilityBenefit = 0.83
+DivertedProfitsTax = 0.52
+DrugTreatment = 0.75
+DrugEnforcement = 0.5
+ElectricCarsInitiative = 0.1
+ExecutiveTermLength = 0.5
+ExecutiveTermLimit = 0
+FamilyPlanning = 0.5
+FoodStandards = 0.5
+ForeignAid = 0.45
+FreeSchoolMeals = 0.25
+Gambling = 0.1
+GameHunting = 0.5
+GayMarriage = 0.5
+GenderDiscriminationAct = 0.5
+GenderTransition = 0.5
+HandgunLaws = 0.5
+HybridCarsInitiative = 0.25
+IDCards = 0.5
+IncomeTax = 0.46
+InheritanceTax = 0.4
+IntellectualPropertyRights = 0.85
+IntelligenceServices = 0.55
+JudiciaryIndependence = 0.85
+JunkFoodTax = 0.5
+LaborDayBankHoliday = 0.6
+LabourLaws = 0.95
+LegalAid = 0.75
+LegaliseProstitution = 0.25
+LimitAutomatedTrading = 0.01
+Mandatorymicrogeneration = 0.1
+MansionTax = 0.45
+MarriedTaxAllowance = 0.25
+MaternityLeave = 0.3
+MicrogenerationGrants = 0.5
+MilitarySpending = 0.55
+MinimumWage = 0.55
+MortgageTaxRelief = 0.25
+Narcotics = 0
+NuclearFission = 0.84
+NuclearWeapons = 0.66
+OrganDonation = 0.5
+OrganicSubsidy = 0.75
+PayrollTax = 0.85
+PetrolTax = 0.51
+PoliceForce = 0.52
+PollutionControls = 0.5
+PressFreedom = 0.85
+PrisonerTagging = 0.32
+PrisonRegime = 0.3
+Prisons = 0.4
+PropertyTax = 0.88
+PublicLibraries = 0.5
+RaceDiscriminationAct = 0.5
+RacialProfiling = 0.25
+RetirementAge = 0.30
+RightToPrivacy = 0.5
+RoadBuilding = 0.48
+RubberBullets = 0.75
+SalesTax = 0.55
+SchoolBuses = 0.61
+ScienceFunding = 0.48
+SelectiveSchooling = 0.5
+SmallBusinessGrants = 0.1
+SmartMeterProgram = 0.81
+StateBroadcaster = 0.5
+StateEnergy = 0.45
+StateHealthService = 0.64
+StateHousing = 0.45
+StatePensions = 0.78
+StatePostService = 0.5
+StateRail = 0.55
+StateSchools = 0.64
+StateTelecoms = 0.65
+StemCells = 0.25
+TobaccoTax = 0.27
+TollRoads = 0.66
+UnemployedBenefit = 0.75
+UniversityGrants = 0.1
+WorkersOnBoards = 0.33
+_prereq_has_coast = 1
+_prereq_mining_industry = 1
+_prereq_land_border = 1
+_prereq_wmd = 1
+_prereq_nuclear_tech = 1
+_prereq_eu = 1
+_prereq_france = 1
+minimumvotingage = 0.41
+statefundingparties = 0.34
+corporatedonors = 1.0
+electionads = 1.0
+partydonations = 1.0
+voterid = 0.33
+
+[options]
+MULTIPLEPARTIES
+
+
+
+
+
+
+
+
+

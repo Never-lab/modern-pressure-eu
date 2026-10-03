@@ -1,0 +1,51 @@
+[config]
+0 = _prereq_has_coast
+1 = _prereq_mining_industry
+2 = _prereq_deadly_animals
+3 = _prereq_preindustrialized
+4 = _prereq_royal_family
+5 = _prereq_land_border
+6 = _prereq_poachers
+7 = _prereq_indigenous
+8 = _prereq_hurricane
+9 = _prereq_wmd
+10 = _prereq_whaling
+11 = _prereq_sovereign_currency
+12 = _prereq_reserve_currency
+13 = _prereq_nuclear_tech
+14 = _prereq_germany
+15 = _prereq_canada
+16 = _prereq_southkorea
+17 = _prereq_eu
+18 = _prereq_uk
+19 = _prereq_tsunami
+20 = _prereq_earthquake
+21 = _prereq_brazil
+22 = _prereq_switzerland
+23 = _prereq_turkey
+24 = _prereq_poland
+25 = _prereq_australia
+26 = _prereq_france
+27 = _prereq_italy
+28 = _prereq_japan
+29 = _prereq_spain
+30 = _prereq_usa
+31 = _prereq_greece
+32 = _prereq_ireland 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
