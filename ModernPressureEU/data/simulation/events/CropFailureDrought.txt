@@ -7,6 +7,6 @@ OnImplement = CreateGrudge(CropFailureDrought,-0.92,0.88);CreateGrudge(CoastalFl
 [influences]
 0 = _random_,0.04,0.24
 1 = AverageTemperature,0+(0.40*x)
-2 = Agriculture,0.28-(0.28*x)
+2 = FoodPrice,0.28-(0.28*x)
 3 = Environment,0.22-(0.22*x)
 4 = _prereq_,_prereq_eu

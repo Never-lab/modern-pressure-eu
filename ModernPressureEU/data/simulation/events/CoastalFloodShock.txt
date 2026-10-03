@@ -8,5 +8,5 @@ OnImplement = CreateGrudge(CoastalFloodShock,-0.92,0.88);CreateGrudge(CropFailur
 0 = _random_,0.04,0.24
 1 = AverageTemperature,0+(0.36*x)
 2 = Environment,0.26-(0.26*x)
-3 = Debt,0+(0.18*x)
+3 = _effectivedebt_,0+(0.18*x)
 4 = _prereq_,_prereq_eu
