@@ -15,7 +15,7 @@ foreach ($id in $EuIds) {
   $destDir = Join-Path $ModRoot "data\missions\$($match.Name)"
   New-Item -ItemType Directory -Force -Path $destDir | Out-Null
   $dest = Join-Path $destDir $srcTxt.Name
-  $text = Get-Content $srcTxt.FullName -Raw
+  $text = [System.IO.File]::ReadAllText($srcTxt.FullName, [System.Text.UTF8Encoding]::new($false))
   if ($text -notmatch '(?im)^_prereq_mod_eu\s*=') {
     if ($text -notmatch '(?im)\[policies\]') { throw "$($match.Name) missing [policies] section" }
     $text = [regex]::Replace($text, '(?im)(\[policies\]\s*)', "`$1`r`n_prereq_mod_eu = 1`r`n", 1)
