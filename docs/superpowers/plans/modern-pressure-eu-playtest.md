@@ -21,3 +21,11 @@ Installed mod: `C:\Users\nicho\Documents\My Games\Democracy4\mods\ModernPressure
 ## Workshop
 
 - [ ] In-game Workshop upload after checklist all checked
+
+## v2 checklist
+
+- [ ] EU: 32 policies visible (spot-check new IDs in Economia/Welfare/Esteri/Servizi/Legge)
+- [ ] IT strings readable on 3 new priority policies
+- [ ] Non-EU: still 0 mod policies/events
+- [ ] Long EU run: observe one heavy-cluster burst (2 related events close) OR note absence for retune
+- [ ] Turn 30: no crash/softlock

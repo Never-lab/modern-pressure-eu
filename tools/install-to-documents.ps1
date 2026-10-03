@@ -15,7 +15,7 @@ name = ModernPressureEU
 path = $dest
 guiname = Pressione Moderna UE
 author = nicho
-description = Pack UE: clima, casa, tech/IA, migrazione, salute. Costi alti, effetti lenti, crisi serie. Contenuti aggiuntivi + flag missioni UE. Non e' un overhaul economico completo.
+description = Pack UE v2: clima, casa, migrazione (deep) + tech/salute. Costi alti, crisi a ondate, effetti pesanti. 32 policy, 20 eventi. Gate _prereq_eu. Non e' un overhaul economico completo.
 "@
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 [System.IO.File]::WriteAllText((Join-Path $dest "config.txt"), $cfg, $utf8NoBom)
