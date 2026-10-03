@@ -1,0 +1,184 @@
+[config]
+currency = "â‚¬"
+population = 30231
+economic_cycle_start = 0.1
+min_income = 0
+max_income = 160000
+name  = italy
+names_file = "data/names/italiannames.txt"
+flag = "flag_italy.png"
+map = "map_italy.svg"
+GUID = 9
+fx_rate_to_pound = 1.11
+apathy = 0.29
+starting_debt = 2657503
+min_gdp = 820000
+max_gdp = 2620000
+wealth_mod = 2.000
+minor_parties = 1
+difficulty = 4
+votingsystem = PR
+
+[policies]
+
+_prereq_mod_eu = 1
+_prereq_has_coast = 1
+_prereq_eu = 1
+_prereq_land_border = 1
+_prereq_hurricane = 1
+_prereq_poachers = 1
+_prereq_mining_industry = 1
+_prereq_italy = 1
+
+AbortionLaw = 0.75
+AdultEducationSubsidies = 0.5
+AgricultureSubsidies = 0.68
+AirlineTax = 0.05
+AlcoholLaw = 0.2
+AlcoholTax = 0.35
+AntibioticsBan = 0.5
+AntiCorruptionAgency = 0.125
+ArmedPolice = 0.5
+ArtsSubsidies = 0.23
+BanSundayShopping = 0.75
+bantobacco = 0.15
+BiofuelSubsidies = 0.14
+BorderControls = 0.5
+BusinessStartupCampaign = 0.1
+BusLanes = 0.6
+BusSubsidies = 0.55
+CapitalGainsTax = 0.25
+CarbonCaptureAndStorage = 0.1
+CarEmmissionsLimits = 0.1
+CarPoolingCampaign = 0.14
+CarTax = 0.95
+CCTVCameras = 0.2
+CharityTaxRelief = 0.2
+ChildBenefit = 0.76
+CitizenshipTests = 0.1
+CleanEnergySubsidies = 0.35
+CleanFuelSubsidy = 0.2
+CommunityPolicing = 0.8
+CompulsoryFoodLabelling = 0.33
+CompulsoryForeignLanguageClasses = 0.5
+CompulsorySchoolSports = 0.4
+ConsumerRights = 0.5
+CorporationTax = 0.46
+CyclingCampaign = 0.62
+DiplomaticService = 0.1
+DisabilityBenefit = 0.5
+DrugEnforcement = 0.5
+DrugTreatment = 0.25
+EcoHomeRegulations = 0.1
+ElectricCarsInitiative = 0.45
+EnterpriseInvestmentScheme = 0.22
+ExecutiveTermLength = 0.5
+ExecutiveTermLimit = 1.0
+FamilyPlanning = 0.75
+FoodStandards = 0.65
+ForeignAid = 0.21
+FreeEyeTests = 0.25
+FreeParentingClasses = 0.25
+Gambling = 0.7
+GameHunting = 0.5
+GatedCommunities = 0.3
+GayMarriage = 0.5
+GenderDiscriminationAct = 0.25
+GenderTransition = 0.17
+HandgunLaws = 0.66
+HybridCarsInitiative = 0.5
+IDCards = 0.25
+IncomeTax = 0.55
+InheritanceTax = 0.1
+IntellectualPropertyRights = 0.9
+IntelligenceServices = 0.5
+InternationalFusionResearchProject = 0.2
+JudiciaryIndependence = 0.66
+JunkFoodTax = 0.65
+LaborDayBankHoliday = 0.5
+LabourLaws = 0.65
+LegalAid = 0.6
+LegaliseProstitution = 0.5
+LimitAutomatedTrading = 0.125
+Limitorbancarsincities = 0.1
+MarriedTaxAllowance = 0.2
+MaternityLeave = 0.5
+MicrogenerationGrants = 0.4
+MilitarySpending = 0.3
+MortgageTaxRelief = 0.2
+Narcotics = 0.15
+NeedleExchangeProgram = 0.5
+Newcarsubsidies = 0.12
+OrganDonation = 0.5
+OrganicSubsidy = 0.68
+PayrollTax = 0.4
+PetrolTax = 0.64
+PhoneTapping= 0.25
+PlasticBagTax = 0.5
+PoliceDrones = 0.2
+PoliceForce = 0.58
+PollutionControls = 0.35
+PressFreedom = 0.5
+PrisonerTagging = 0.3
+PrisonerVoting = 0.75
+PrisonRegime = 0.5
+Prisons = 0.5
+PropertyTax = 0.1
+PublicLibraries = 0.1
+RaceDiscriminationAct = 0.8
+Recycling = 0.6
+RetirementAge = 0.5
+RightToPrivacy = 0.5
+RoadBuilding = 0.3
+RubberBullets = 0.25
+SalesTax = 0.55
+SchoolBuses = 0.5
+ScienceFunding = 0.5
+SelectiveSchooling = 0.2
+SmallBusinessGrants = 0.2
+SmartMeterProgram = 0.5
+SocialCare = 0.1
+SpeedCameras = 0.65
+StateAirline = 0.8
+StateBroadcaster = 0.5
+StateEnergy = 0.2
+StateHealthService = 0.8
+StateHousing = 0.4
+StatePensions = 0.55
+StatePostService = 0.61
+StateRail = 0.55
+StateSchools = 0.66
+StateWater = 0.5
+StemCells = 0.5
+Tasers = 0.5
+TobaccoTax = 0.15
+TollRoads = 0.75
+TourismAdCampaign = 0.5
+UnemployedBenefit = 0.45
+UniversityGrants = 0.65
+WaterCannon = 0.25
+WitnessProtectionProgram = 0.5
+WorkSafetyLaw = 0.35
+CitizenshipForSale = 0.25
+ImmigrationRules = 0.5
+RefugeePolicy = 0.5
+competitionlaw = 0.35
+bordernavy = 0.25
+religioustax = 0.4
+co2campaign = 0.3
+
+minimumvotingage = 0.41
+partydonations = 0
+voterid = 0.66
+
+[options]
+MULTIPLEPARTIES
+
+
+
+
+
+
+
+
+
