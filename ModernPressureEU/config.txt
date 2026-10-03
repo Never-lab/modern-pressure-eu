@@ -1,0 +1,6 @@
+[config]
+name = ModernPressureEU
+path = C:\Users\nicho\Documents\My Games\Democracy4\mods\ModernPressureEU
+guiname = Modern Pressure EU
+author = nicho
+description = EU pressure pack: climate, housing, tech/AI, migration, health. Hard costs, slow payoffs, serious crises. Additive content + EU mission flag. Not a full economy overhaul.
