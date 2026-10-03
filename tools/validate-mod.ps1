@@ -50,4 +50,8 @@ foreach ($n in $events) {
   if (-not ($enEv | Where-Object { $_ -match [regex]::Escape($n) })) { throw "EN event $n" }
   if (-not ($itEv | Where-Object { $_ -match [regex]::Escape($n) })) { throw "IT event $n" }
 }
+$checker = Join-Path $PSScriptRoot "check-effect-targets.py"
+if (-not (Test-Path $checker)) { throw "missing check-effect-targets.py" }
+& python $checker
+if ($LASTEXITCODE -ne 0) { throw "invalid simulation targets (see check-effect-targets.py)" }
 Write-Output "VALIDATE_OK"

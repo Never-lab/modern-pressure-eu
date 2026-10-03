@@ -1,138 +1,110 @@
 #!/usr/bin/env python3
-"""Validate mod policy/event effect targets against vanilla data."""
+"""Fail if mod policies/events reference unknown Democracy 4 simulation objects."""
+from __future__ import annotations
+
 import csv
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-GAME = (ROOT / "reference" / "game_path.txt").read_text(encoding="utf-8").strip()
+GAME = (
+    (ROOT / "reference" / "game_path.txt")
+    .read_text(encoding="utf-8-sig")
+    .strip()
+    .strip("\ufeff")
+)
 GAME_P = Path(GAME)
+MOD = ROOT / "ModernPressureEU"
 
-# Collect known names from vanilla simulation CSVs and related files
-known = set()
-sim_dir = GAME_P / "data" / "simulation"
-for path in sim_dir.rglob("*"):
-    if path.suffix.lower() not in {".csv", ".txt"}:
-        continue
-    try:
-        text = path.read_text(encoding="utf-8", errors="ignore")
-    except OSError:
-        continue
-    for m in re.finditer(r"\b([A-Za-z_][A-Za-z0-9_]{2,})\b", text):
-        known.add(m.group(1))
 
-# Also policy names from vanilla
-pol_path = sim_dir / "policies.csv"
-if pol_path.exists():
-    for row in csv.reader(pol_path.open(encoding="utf-8", errors="ignore")):
-        if len(row) > 1 and row[0] == "#":
-            known.add(row[1])
-
-# Known voter groups / specials often used
-known.update(
-    {
+def load_known() -> set[str]:
+    known = {
         "_All_",
         "_prereq_eu",
+        "_prereq_",
         "_random_",
         "_percept_trust",
-        "GDP",
-        "Debt",
-        "Crime",
-        "Health",
-        "Technology",
-        "Environment",
-        "Immigration",
-        "IllegalImmigration",
-        "Homelessness",
-        "Unemployment",
-        "PovertyRate",
-        "PrivateHousing",
-        "FoodPrice",
-        "Agriculture",
-        "Tourism",
-        "Farmers",
-        "Capitalist",
-        "Poor",
-        "MiddleIncome",
-        "Liberal",
-        "Socialist",
-        "Conservatives",
-        "Patriot",
-        "Parents",
-        "SelfEmployed",
-        "ForeignRelations",
-        "InternationalTrade",
-        "EnergyEfficiency",
-        "CO2Emissions",
-        "AverageTemperature",
-        "HealthcareDemand",
-        "FakeNews",
-        "RacialTension",
-        "Equality",
-        "Democracy",
-        "Stability",
-        "Corruption",
+        "_effectivedebt_",
+        "_globaleconomy_",
+        "_global_interest_rates_",
+        "_winning_",
+        "_difficulty_",
+        "_year",
+        "_security_",
+        "_HighIncome",
+        "_LowIncome",
+        "_MiddleIncome",
+        "_Terrorism",
     }
-)
+    sim = GAME_P / "data" / "simulation"
+    for fname in (
+        "simulation.csv",
+        "situations.csv",
+        "votertypes.csv",
+        "pressuregroups.csv",
+        "policies.csv",
+    ):
+        path = sim / fname
+        for row in csv.reader(path.open(encoding="utf-8", errors="ignore")):
+            if row and row[0] == "#" and len(row) > 1:
+                known.add(row[1])
+    for folder in (sim / "events", MOD / "data" / "simulation" / "events"):
+        if not folder.exists():
+            continue
+        for path in folder.glob("*.txt"):
+            for line in path.read_text(encoding="utf-8", errors="ignore").splitlines()[:10]:
+                if line.strip().lower().startswith("name"):
+                    known.add(line.split("=", 1)[1].strip())
+                    break
+    return known
 
-mod_pol = ROOT / "ModernPressureEU" / "data" / "simulation" / "policies.csv"
-bad_pol = []
-targets = set()
-for row in csv.reader(mod_pol.open(encoding="utf-8")):
-    if not row or row[0] != "#":
-        continue
-    pid = row[1]
-    # effects start after #Effects marker
-    try:
+
+def main() -> int:
+    known = load_known()
+    bad: list[str] = []
+
+    pol = MOD / "data" / "simulation" / "policies.csv"
+    for row in csv.reader(pol.open(encoding="utf-8")):
+        if not row or row[0] != "#":
+            continue
+        pid = row[1]
+        if "#Effects" not in row:
+            bad.append(f"policy {pid}: missing #Effects")
+            continue
         idx = row.index("#Effects")
-    except ValueError:
-        continue
-    for cell in row[idx + 1 :]:
-        if not cell or not cell.strip():
-            continue
-        name = cell.split(",")[0].strip().strip('"')
-        if not name or name == "#Effects":
-            continue
-        targets.add((pid, name))
-        if name not in known:
-            bad_pol.append((pid, name))
+        for cell in row[idx + 1 :]:
+            if not cell.strip():
+                continue
+            name = cell.split(",")[0].strip().strip('"')
+            if name and name not in known:
+                bad.append(f"policy {pid}: {name}")
 
-print("=== BAD POLICY EFFECT TARGETS ===")
-for pid, name in sorted(bad_pol):
-    print(f"{pid}: {name}")
-if not bad_pol:
-    print("(none)")
+    for path in sorted((MOD / "data" / "simulation" / "events").glob("*.txt")):
+        text = path.read_text(encoding="utf-8")
+        for m in re.finditer(r"CreateGrudge\(([A-Za-z_][A-Za-z0-9_]*)", text):
+            if m.group(1) not in known:
+                bad.append(f"grudge {path.name}: {m.group(1)}")
+        for line in text.splitlines():
+            m = re.match(r"\s*\d+\s*=\s*([^,]+)", line)
+            if not m:
+                continue
+            name = m.group(1).strip()
+            if name in {"_random_", "_prereq_", "_winning_", "_difficulty_"}:
+                continue
+            if name.startswith("_prereq"):
+                continue
+            if name not in known:
+                bad.append(f"influence {path.name}: {name}")
 
-# Event CreateGrudge / influence names
-ev_dir = ROOT / "ModernPressureEU" / "data" / "simulation" / "events"
-bad_ev = []
-for path in sorted(ev_dir.glob("*.txt")):
-    text = path.read_text(encoding="utf-8")
-    for m in re.finditer(r"CreateGrudge\(([A-Za-z_][A-Za-z0-9_]*)", text):
-        name = m.group(1)
-        # event Names are ok even if not in known (self/sibling)
-        if name not in known and not (ev_dir / f"{name}.txt").exists():
-            # also allow v1+v2 event names present as files
-            bad_ev.append((path.name, f"CreateGrudge:{name}"))
-    for line in text.splitlines():
-        if "=" not in line or line.strip().startswith("["):
-            continue
-        # influences: N = Name,...
-        m = re.match(r"\s*\d+\s*=\s*([^,]+)", line)
-        if not m:
-            continue
-        name = m.group(1).strip()
-        if name in {"_random_", "_prereq_"}:
-            continue
-        if name.startswith("_prereq"):
-            continue
-        if name not in known and not (ev_dir / f"{name}.txt").exists():
-            bad_ev.append((path.name, f"influence:{name}"))
+    if bad:
+        print("INVALID_TARGETS")
+        for item in sorted(set(bad)):
+            print(item)
+        return 1
+    print("TARGETS_OK")
+    return 0
 
-print("=== BAD EVENT REFS ===")
-for f, name in sorted(set(bad_ev)):
-    print(f"{f}: {name}")
-if not bad_ev:
-    print("(none)")
 
-print(f"known_approx={len(known)} policy_targets={len(targets)}")
+if __name__ == "__main__":
+    sys.exit(main())
