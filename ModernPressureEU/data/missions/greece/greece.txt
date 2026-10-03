@@ -1,0 +1,190 @@
+[config]
+currency = "€"
+population = 5350
+economic_cycle_start = 0.25
+min_income = 0
+max_income = 67260
+name  = greece
+names_file = "data/names/greeknames.txt"
+flag = "flag_greece.png"
+map = "map_greece.svg"
+GUID = 12
+fx_rate_to_pound = 1.11
+apathy = 0.42
+starting_debt = 352000
+min_gdp = 89500
+max_gdp = 268500
+wealth_mod = 0.34
+minor_parties = 1
+difficulty = 2
+votingsystem = PR
+
+[policies]
+
+_prereq_mod_eu = 1
+AbortionLaw = 1
+AgricultureSubsidies = 0.45
+AirlineTax = 0.02
+AlcoholLaw = 0.5
+AlcoholTax = 0.31
+AntiCorruptionAgency = 0.5
+ArmedPolice = 0.5
+ArtsSubsidies = 0.75
+BanSundayShopping = 0.5
+BicycleSubsidies = 0.4
+BiofuelSubsidies = 0.5
+BodyCameras = 0.8
+BorderControls = 0.5
+BusLanes = 0.5
+BusSubsidies = 1
+CapitalGainsTax = 0.125
+CarEmmissionsLimits = 0.5
+CarTax = 0.43
+CCTVCameras = 0.03
+CharityTaxRelief = 0.5
+ChildBenefit = 1
+ChildcareProvision = 1
+CitizenshipTests = 0.75
+CleanEnergySubsidies
+CleanFuelSubsidy = 0.5
+CompulsoryFoodLabelling = 0.25
+CompulsoryForeignLanguageClasses = 0.5
+Compulsorylanguagelessons = 0.5
+CompulsorySchoolSports = 0.5
+ConsumerRights = 0.5
+CorporationTax = 0.42
+Creationism = 0.25
+DiplomaticService = 0.1
+DisabilityBenefit = 0.45
+DrugTreatment = 0.75
+EcoHomeRegulations = 0.65
+ElectricCarsInitiative = 0.14
+EnterpriseInvestmentScheme = 0.25
+ExecutiveTermLength = 0.5
+ExecutiveTermLimit = 0
+FamilyPlanning = 0.1
+FemaleGenitalMutilationBan = 0.2
+FoodStamps = 0.5
+FoodStandards = 0.5
+ForeignAid = 0.17
+ForeignInvestorTaxBreaks = 0.66
+FreeEyeTests = 0.8
+FreeSchoolMeals = 0.65
+FuelEfficiency = 0.57
+Gambling = 0.33
+GameHunting = 0.33
+GatedCommunities = 0.5
+GenderDiscriminationAct = 0.25
+GenderTransition = 1
+GovernmentSubsidiesForUnions = 0.25
+HandgunLaws = 0.33
+HybridCarsInitiative = 0.6
+IDCards = 0.25
+IncomeTax = 0.42
+InheritanceTax = 0.15
+IntellectualPropertyRights = 0.29
+IntelligenceServices = 0.34
+InternationalFusionResearchProject = 0.2
+JudiciaryIndependence = 0.51
+JuryTrial = 0.2
+LaborDayBankHoliday = 0.65
+LabourLaws = 0.36
+LegalAid = 0.01
+LegaliseProstitution = 0.75
+Limitorbancarsincities = 0.2
+LuxuryGoodsTax = 0.2
+MaternityLeave = 1
+MicrogenerationGrants = 0.5
+MilitarySpending = 0.29
+MinimumWage = 0.27
+Narcotics = 0.16
+NationalArmedForcesWeek = 0.75
+NationalService = 0.75
+NeedleExchangeProgram = 0.5
+OilDrillingSubsidy = 0.175
+OrganDonation = 0.33
+OrganicSubsidy = 0.25
+PayrollTax = 0.85
+PetrolTax = 0.51
+PlasticBagTax = 0.5
+PoliceDrones = 0.5
+PoliceForce = 1
+PollutionControls = 0.48
+PressFreedom = 0.6
+PrisonerTagging = 0.5
+PrisonerVoting = 0.5
+PrisonRegime = 0.75
+Prisons = 0.41
+PropertyTax 0.2
+PublicLibraries = 0.15
+RaceDiscriminationAct = 0.8
+Recycling = 0.29
+RetirementAge = 0.46
+RightToPrivacy = 1
+RoadBuilding
+RubberBullets = 0.4
+RuralDevelopmentGrants
+SalesTax = 0.47
+SchoolPrayers = 0.75
+ScienceFunding = 0.29
+SelectiveSchooling = 0.25
+SmartMeterProgram = 0.5
+SocialCare = 0.19
+StateBroadcaster = 0.25
+StateEnergy = 0.34
+StateHealthService = 0.28
+StatePensions = 0.85
+StatePostService = 0.16
+StateRail = 0.35
+StateSchools= 0.5
+StateWater = 0.2
+StemCells = 1
+Tasers = 0.5
+TaxShelters = 0.12
+TearGas = 0.5
+TechnologyColleges = 0.15
+TechnologyGrants = 0.3
+TelecommutingInitiative = 0.5
+TobaccoAwarenessCampaign = 0.5
+TobaccoTax = 0.23
+TourismAdCampaign = 0.58
+TradeCouncil = 0.29
+UnemployedBenefit = 0.48
+UniversityGrants = 0.2
+WaterCannon = 0.5
+WorkSafetyLaw = 0.25
+YoungEntrepreneurScheme = 0.5
+CitizenshipForSale = 0.33
+ImmigrationRules = 0.66
+RefugeePolicy = 0.5
+desalination = 0.05
+plasticstax = 0.2
+competitionlaw = 0.35
+bantobacco = 0.2
+
+
+_prereq_mining_industry = 1
+_prereq_land_border = 1
+_prereq_eu = 1
+_prereq_has_coast = 1
+_prereq_greece = 1
+
+
+compulsoryvote = 0
+corporatedonors = 1
+minimumvotingage = 0.33
+partydonations = 0
+robocalls = 0.66
+statefundingparties = 0.1
+voterid = 0.66
+
+[options]
+MULTIPLEPARTIES
+
+
+
+
+
+
+
+

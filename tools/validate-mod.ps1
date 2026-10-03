@@ -31,4 +31,9 @@ foreach ($m in $missions) {
   $t = Get-ChildItem $m.FullName -Filter *.txt | Select-Object -First 1
   if ((Get-Content $t.FullName -Raw) -notmatch "(?im)_prereq_mod_eu\s*=\s*1") { throw "mission $($m.Name)" }
 }
+
+foreach ($id in $ids) {
+  $icon = Join-Path $root ("data/svg/icons_{0}.svg" -f $id.ToLower())
+  if (-not (Test-Path $icon)) { throw "missing icon $icon" }
+}
 Write-Output "VALIDATE_OK"

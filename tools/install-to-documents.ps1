@@ -13,9 +13,10 @@ $cfg = @"
 [config]
 name = ModernPressureEU
 path = $dest
-guiname = Modern Pressure EU
+guiname = Pressione Moderna UE
 author = nicho
-description = EU pressure pack: climate, housing, tech/AI, migration, health. Hard costs, slow payoffs, serious crises. Additive content + EU mission flag. Not a full economy overhaul.
+description = Pack UE: clima, casa, tech/IA, migrazione, salute. Costi alti, effetti lenti, crisi serie. Contenuti aggiuntivi + flag missioni UE. Non e' un overhaul economico completo.
 "@
-Set-Content -Path (Join-Path $dest "config.txt") -Value $cfg -Encoding utf8
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+[System.IO.File]::WriteAllText((Join-Path $dest "config.txt"), $cfg, $utf8NoBom)
 Write-Output "INSTALLED=$dest"

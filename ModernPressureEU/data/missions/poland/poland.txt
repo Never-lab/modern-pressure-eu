@@ -1,0 +1,183 @@
+[config]
+currency = "PLN"
+population = 18975
+economic_cycle_start = 0.25
+min_income = 0
+max_income = 240000
+name  = poland
+names_file = "data/names/polishnames.txt"
+flag = "flag_poland.png"
+map = "map_poland.svg"
+GUID = 14
+fx_rate_to_pound = 0.18
+apathy = 0.38
+starting_debt = 1148000
+min_gdp = 1315000
+max_gdp = 3945000
+wealth_mod = 5.03
+minor_parties = 1
+difficulty = 1
+votingsystem = FPTP
+
+[policies]
+
+_prereq_mod_eu = 1
+AbortionLaw = 0.25
+AgricultureSubsidies = 0.25
+AlcoholLaw = 0.5
+AlcoholTax = 0.28
+AntiCorruptionAgency = 0.5
+ArmedPolice = 0.5
+ArtsSubsidies = 1
+BanSundayShopping = 0.75
+BiofuelSubsidies = 0.5
+BodyCameras = 0.5
+BorderControls = 0.4
+BusLanes = 0.3
+BusSubsidies = 0.43
+CapitalGainsTax = 0.16
+CarEmmissionsLimits = 0.5
+CharityTaxRelief = 0.25
+ChildBenefit = 1
+ChildcareProvision = 1
+CleanEnergySubsidies
+CleanFuelSubsidy = 0.5
+CommunityPolicing = 0.5
+CompulsoryFoodLabelling = 0.25
+CompulsoryForeignLanguageClasses = 0.5
+Compulsorylanguagelessons = 0.5
+CompulsorySchoolSports = 0.8
+ConsumerRights = 0.5
+CorporationTax = 0.37
+Creationism = 0.5
+Cyberbullyingawarenesscampaign = 0.5
+DetentionWithoutTrial = 0
+DisabilityBenefit = 0.65
+DrugTreatment = 0.8
+EcoHomeRegulations = 0.6
+EnterpriseInvestmentScheme = 0.45
+ExecutiveTermLength = 0.5
+ExecutiveTermLimit = 0
+FaithSchoolSubsidies = 0.5
+FamilyPlanning = 0.25
+FemaleGenitalMutilationBan = 0.2
+FoodStamps = 0.5
+FoodStandards = 0.5
+ForeignAid = 0.14
+ForeignInvestorTaxBreaks = 0.1
+FreeBusPasses = 0.2
+FreeSchoolMeals = 0.75
+FuelEfficiency = 0.57
+Gambling = 0
+GameHunting = 0.33
+GatedCommunities = 1
+GenderDiscriminationAct = 0.56
+GenderTransition = 0.33
+HandgunLaws = 0.33
+HealthyEatingCampaign = 0.25
+IDCards = 0.5
+IncomeTax = 0.3
+InheritanceTax = 0.05
+IntellectualPropertyRights = 0.18
+IntelligenceServices = 0.01
+JudiciaryIndependence = 0.43
+JunkFoodTax = 0.06
+JuryTrial = 0.1
+LaborDayBankHoliday = 0.7
+LabourLaws = 0.8
+LegalAid = 0.01
+LegaliseProstitution = 0.5
+MaternityLeave = 1
+MicrogenerationGrants = 0.75
+MilitarySpending = 0.26
+MinimumWage = 0.38
+Narcotics = 0.16
+NationalArmedForcesWeek = 0.65
+NeedleExchangeProgram = 0.4
+OilDrillingSubsidy = 0.15
+OrganDonation = 0.66
+OrganicSubsidy = 0.25
+PayrollTax = 0.83
+PetrolTax = 0.29
+PhoneTapping = 0.2
+PlasticBagTax = 0.45
+PoliceDrones = 0.75
+PoliceForce = 0.78
+PollutionControls = 0.3
+PressFreedom = 0.7
+PrisonerVoting = 0.75
+PrisonRegime = 0.2
+Prisons = 0.69
+PropertyTax = 0.08
+PublicLibraries = 0.5
+RaceDiscriminationAct = 0.7
+Recycling = 0.45
+Reforestation = 0.01
+RentControls = 0.1
+RetirementAge = 0.33
+RightToPrivacy = 0.55
+RoadBuilding = 0.36
+RubberBullets = 0.5
+SalesTax = 0.45
+SchoolBuses = 0.5
+SchoolVouchers = 0.2
+ScienceFunding = 0.38
+SmartMeterProgram = 0.4
+SocialCare = 0.15
+StateAirline = 0.6
+StateBroadcaster = 0.75
+StateEnergy = 0.8
+StateHealthService = 0.34
+StateHousing = 0.12
+StatePensions = 0.9
+StatePostService = 0.56
+StateRail = 0.89
+StateSchools = 0.56
+StemCells = 0.8
+TearGas = 0.55
+TechnologyGrants = 0.39
+TelecommutingInitiative = 0.3
+TobaccoAwarenessCampaign = 0.75
+TobaccoTax = 0.17
+TourismAdCampaign = 0.2
+TradeCouncil = 0.39
+UnemployedBenefit = 0.47
+UniversityGrants = 0.2
+WaterCannon = 0.2
+WorkSafetyLaw = 0.75
+YoungEntrepreneurScheme = 0.5
+CitizenshipForSale = 0
+ImmigrationRules = 0.66
+RefugeePolicy = 0.5
+plasticstax = 0.2
+competitionlaw = 0.65
+bantobacco = 0.1
+
+_prereq_land_border = 1
+_prereq_has_coast = 1
+_prereq_mining_industry = 1
+_prereq_sovereign_currency = 1
+_prereq_nuclear_tech = 1
+_prereq_eu = 1
+_prereq_poland = 1
+
+
+corporatedonors = 1
+electionads = 0.5
+minimumvotingage = 0.41
+partydonations = 0.5
+robocalls = 0.66
+statefundingparties = 0.5
+voterid = 0.66
+
+[options]
+MULTIPLEPARTIES
+
+
+
+
+
+
+
+
+
