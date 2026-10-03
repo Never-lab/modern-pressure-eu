@@ -5,7 +5,7 @@ GUISound = DM4_CoastalOilSpill.wav
 OnImplement = CreateGrudge(EUFiscalWarning,-0.93,0.90);CreateGrudge(_effectivedebt_,0.16,0.84);CreateGrudge(ForeignRelations,-0.12,0.82);CreateGrudge(Capitalist,-0.10,0.80);CreateGrudge(_All_,-0.08,0.84);CreateGrudge(CostOfLivingMarch,-0.35,0.78);
 
 [influences]
-0 = _random_,0.03,0.18
+0 = _random_,0.030,0.160
 1 = _effectivedebt_,0+(0.38*x)
 2 = GDP,0.20-(0.20*x)
 3 = ForeignRelations,0.16-(0.16*x)

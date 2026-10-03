@@ -5,7 +5,7 @@ GUISound = DM4_CoastalOilSpill.wav
 OnImplement = CreateGrudge(CostOfLivingMarch,-0.93,0.90);CreateGrudge(CropFailureDrought,-0.40,0.78);CreateGrudge(HomelessCampCrisis,-0.40,0.78);CreateGrudge(EnergyPriceSpike,-0.35,0.78);CreateGrudge(Poor,-0.16,0.80);CreateGrudge(MiddleIncome,-0.14,0.80);CreateGrudge(_All_,-0.10,0.82);CreateGrudge(GDP,-0.08,0.84);
 
 [influences]
-0 = _random_,0.035,0.20
+0 = _random_,0.030,0.160
 1 = PovertyRate,0+(0.30*x)
 2 = FoodPrice,0+(0.26*x)
 3 = Homelessness,0+(0.18*x)

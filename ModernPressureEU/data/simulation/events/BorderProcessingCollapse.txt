@@ -5,7 +5,7 @@ GUISound = DM4_CoastalOilSpill.wav
 OnImplement = CreateGrudge(BorderProcessingCollapse,-0.95,0.90);CreateGrudge(HospitalWinterCrisis,-0.40,0.82);CreateGrudge(Immigration,0.20,0.80);CreateGrudge(IllegalImmigration,0.18,0.80);CreateGrudge(Conservatives,-0.20,0.80);CreateGrudge(Patriot,-0.18,0.80);CreateGrudge(Liberal,-0.12,0.80);CreateGrudge(RacialTension,0.14,0.82);
 
 [influences]
-0 = _random_,0.05,0.28
+0 = _random_,0.030,0.150
 1 = Immigration,0+(0.40*x)
 2 = IllegalImmigration,0+(0.40*x)
 3 = RacialTension,0+(0.26*x)

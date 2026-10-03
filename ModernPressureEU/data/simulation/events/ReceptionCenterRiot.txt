@@ -2,11 +2,11 @@
 Name = ReceptionCenterRiot
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(ReceptionCenterRiot,-0.92,0.88);CreateGrudge(SmugglerCorridorSpike,-0.15,0.55);CreateGrudge(RacialTension,0.18,0.82);CreateGrudge(CrimeRate,0.12,0.80);CreateGrudge(Conservatives,-0.10,0.80);CreateGrudge(Liberal,-0.08,0.82);CreateGrudge(BorderProcessingCollapse,-0.35,0.75);CreateGrudge(CropFailureDrought,-0.45,0.80);CreateGrudge(CoastalFloodShock,-0.45,0.80);CreateGrudge(HomelessCampCrisis,-0.45,0.80);CreateGrudge(LandlordExodus,-0.45,0.80);
+OnImplement = CreateGrudge(ReceptionCenterRiot,-0.92,0.88);CreateGrudge(SmugglerCorridorSpike,-0.08,0.42);CreateGrudge(RacialTension,0.18,0.82);CreateGrudge(CrimeRate,0.12,0.80);CreateGrudge(Conservatives,-0.10,0.80);CreateGrudge(Liberal,-0.08,0.82);CreateGrudge(BorderProcessingCollapse,-0.35,0.75);CreateGrudge(CropFailureDrought,-0.45,0.80);CreateGrudge(CoastalFloodShock,-0.45,0.80);CreateGrudge(HomelessCampCrisis,-0.45,0.80);CreateGrudge(LandlordExodus,-0.45,0.80);
 
 [influences]
-0 = _random_,0.04,0.24
-1 = Immigration,0+(0.36*x)
-2 = RacialTension,0+(0.32*x)
-3 = CrimeRate,0+(0.18*x)
+0 = _random_,0.045,0.210
+1 = Immigration,0+(0.44*x)
+2 = RacialTension,0+(0.40*x)
+3 = CrimeRate,0+(0.24*x)
 4 = _prereq_,_prereq_eu

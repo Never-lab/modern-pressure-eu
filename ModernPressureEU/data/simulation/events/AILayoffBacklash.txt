@@ -5,7 +5,7 @@ GUISound = DM4_CoastalOilSpill.wav
 OnImplement = CreateGrudge(AILayoffBacklash,-0.95,0.90);CreateGrudge(DeepfakeScandal,-0.45,0.82);CreateGrudge(Unemployment,0.20,0.80);CreateGrudge(Technology,-0.14,0.82);CreateGrudge(Liberal,-0.16,0.80);CreateGrudge(SelfEmployed,-0.18,0.80);CreateGrudge(_All_,-0.10,0.82);
 
 [influences]
-0 = _random_,0.05,0.28
+0 = _random_,0.025,0.140
 1 = Technology,0+(0.38*x)
 2 = IndustrialAutomation,0+(0.38*x)
 3 = Unemployment,0+(0.28*x)

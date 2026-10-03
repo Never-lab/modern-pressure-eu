@@ -2,10 +2,10 @@
 Name = RentStrikeWave
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(RentStrikeWave,-0.95,0.90);CreateGrudge(MortgageStress,-0.45,0.82);CreateGrudge(Socialist,0.22,0.80);CreateGrudge(Capitalist,-0.26,0.80);CreateGrudge(Homelessness,0.18,0.82);CreateGrudge(Poor,0.16,0.80);CreateGrudge(_All_,-0.08,0.82);
+OnImplement = CreateGrudge(RentStrikeWave,-0.95,0.90);CreateGrudge(MortgageStress,-0.05,0.38);CreateGrudge(Socialist,0.22,0.80);CreateGrudge(Capitalist,-0.26,0.80);CreateGrudge(Homelessness,0.18,0.82);CreateGrudge(Poor,0.16,0.80);CreateGrudge(_All_,-0.08,0.82);
 
 [influences]
-0 = _random_,0.05,0.28
+0 = _random_,0.030,0.150
 1 = Homelessness,0+(0.48*x)
 2 = PrivateHousing,0.28-(0.28*x)
 3 = PovertyRate,0+(0.24*x)

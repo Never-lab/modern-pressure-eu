@@ -2,10 +2,10 @@
 Name = CoastalFloodShock
 Texture = event25.png
 GUISound = DM4_CoastalOilSpill.wav
-OnImplement = CreateGrudge(CoastalFloodShock,-0.92,0.88);CreateGrudge(CropFailureDrought,-0.15,0.55);CreateGrudge(Environment,-0.16,0.82);CreateGrudge(Tourism,-0.18,0.80);CreateGrudge(GDP,-0.14,0.80);CreateGrudge(_All_,-0.10,0.82);CreateGrudge(HeatGridFailure,-0.30,0.75);CreateGrudge(EnergyPriceSpike,-0.28,0.75);CreateGrudge(HomelessCampCrisis,-0.45,0.80);CreateGrudge(LandlordExodus,-0.45,0.80);CreateGrudge(ReceptionCenterRiot,-0.45,0.80);CreateGrudge(SmugglerCorridorSpike,-0.45,0.80);
+OnImplement = CreateGrudge(CoastalFloodShock,-0.92,0.88);CreateGrudge(CropFailureDrought,-0.05,0.38);CreateGrudge(Environment,-0.16,0.82);CreateGrudge(Tourism,-0.18,0.80);CreateGrudge(GDP,-0.14,0.80);CreateGrudge(_All_,-0.10,0.82);CreateGrudge(HeatGridFailure,-0.30,0.75);CreateGrudge(EnergyPriceSpike,-0.28,0.75);CreateGrudge(HomelessCampCrisis,-0.45,0.80);CreateGrudge(LandlordExodus,-0.45,0.80);CreateGrudge(ReceptionCenterRiot,-0.45,0.80);CreateGrudge(SmugglerCorridorSpike,-0.45,0.80);
 
 [influences]
-0 = _random_,0.04,0.24
+0 = _random_,0.040,0.190
 1 = AverageTemperature,0+(0.36*x)
 2 = Environment,0.26-(0.26*x)
 3 = _effectivedebt_,0+(0.18*x)
