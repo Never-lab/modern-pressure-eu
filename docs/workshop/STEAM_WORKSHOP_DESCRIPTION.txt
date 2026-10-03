@@ -1,0 +1,78 @@
+Modern Pressure EU
+
+A hardcore EU pressure pack for Democracy 4 — modern crises, costly policies, and slow payoffs. Additive content only (not a full economy overhaul).
+
+Author: JustNever_
+Steam: https://steamcommunity.com/id/JustNever_/
+Source / issues: https://github.com/Never-lab/modern-pressure-eu
+
+
+========== WHAT THIS MOD ADDS ==========
+
+• 32 new policies (English + Italian)
+• 20 crisis events with mutual exclusion / burst pacing
+• Gated to EU missions via the vanilla _prereq_eu flag
+• Themes: climate & energy, housing & cost of living, migration, tech/AI, health
+
+
+========== DESIGN PILLARS ==========
+
+• Hard costs and painful side effects — every policy asks for a trade-off
+• Slow inertia on major effects — recovery and payoffs take time
+• Burst crises — calm stretches, then a cluster wave, then a longer cooldown
+• EU-focused — content should not appear on non-EU missions (USA, UK, etc.)
+
+
+========== POLICY THEMES ==========
+
+Climate / energy
+Carbon Border Adjustment, Grid Storage Mandate, Renovation Wave Subsidies, Heat Pump Mandate, Agri Methane Cap, Industrial Electrification Fund, Drought Water Rationing, Coastal Defense Levy, Nuclear Life Extension
+
+Housing / cost of living
+Rent Stabilization Act, Social Housing Surge, Vacancy Tax, Short-Term Rental Cap, First-Home Guarantee, Landlord Energy Upgrade Duty, Anti-Eviction Moratorium, Urban Densification Act
+
+Migration
+Asylum Processing Surge, Skills Visa Fast Track, External Asylum Hubs, Local Reception Quota, Labour Inspection Blitz, Citizenship Track Reform, Schengen Flex Controls
+
+Tech / AI
+AI Workplace Audit, Public Compute Cloud, Platform Duty of Care, Algorithmic Public Services
+
+Health
+Surgical Wait Cap, Pandemic Stockpile Law, Mental Health Access Act, Elder Care Insurance
+
+
+========== CRISIS EVENTS ==========
+
+Heatwave Grid Failure, Energy Price Spike, Rent Strike Wave, Mortgage Stress, AI Layoff Backlash, Deepfake Scandal, Border Processing Collapse, Hospital Winter Crisis, Crop Failure Drought, Coastal Flood Shock, Homeless Camp Crisis, Landlord Exodus, Reception Center Riot, Smuggler Corridor Spike, Public Data Leak, Automation Strike, Ambulance Gridlock, Care Home Outbreak, Cost of Living March, EU Fiscal Warning
+
+
+========== HOW TO PLAY ==========
+
+1. Enable Modern Pressure EU (disable conflicting overhaul mods if you hit issues).
+2. Start an EU mission (Italy, France, Germany, Spain, Greece, Ireland, Poland, etc.).
+3. Look for new policies under Economy, Welfare, Public Services, Foreign Policy, and Law & Order.
+4. Expect serious crises in waves — mitigate early or pay later.
+
+
+========== COMPATIBILITY ==========
+
+• Democracy 4 + EU / Country Pack missions that set _prereq_eu
+• English and Italian localizations included
+• Additive CSV/events — should coexist with most content packs
+• If another mod rewrites the same simulation files aggressively, load order / conflicts may occur
+
+
+========== CREDITS ==========
+
+Author: JustNever_ (https://steamcommunity.com/id/JustNever_/)
+Repository: https://github.com/Never-lab/modern-pressure-eu
+Game: Democracy 4 by Positech Games
+
+
+========== FEEDBACK ==========
+
+Balance reports, bugs, and translation fixes welcome on GitHub Issues:
+https://github.com/Never-lab/modern-pressure-eu/issues
+
+
+Tags: EU, Europe, hardcore, crisis, climate, housing, migration, AI, health, policies, events, Italian, English

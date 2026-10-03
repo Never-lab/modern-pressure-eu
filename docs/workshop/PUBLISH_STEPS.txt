@@ -1,0 +1,31 @@
+Steam Workshop publish — Modern Pressure EU
+===========================================
+
+Automated Steam upload is not available from this repo. Publish from Democracy 4.
+
+1) Sync local mod
+   powershell -NoProfile -File tools/install-to-documents.ps1
+
+2) Confirm folder
+   %USERPROFILE%\Documents\My Games\Democracy4\mods\ModernPressureEU
+   Must contain: config.txt, preview.jpg, icon.jpg, data\, translations\
+
+3) Launch Democracy 4 (Steam online)
+
+4) Open Mods / Workshop UI
+   - Select "Modern Pressure EU"
+   - Set / confirm preview image: preview.jpg (or pick icon.jpg)
+   - Paste description from:
+     docs/workshop/STEAM_WORKSHOP_DESCRIPTION.txt
+   - Author display should read JustNever_
+   - Visibility: Public (or Friends-only for a test)
+
+5) Upload / Publish
+   - Wait for Steam Workshop item ID
+   - Open your item page and verify description + image
+
+6) After publish
+   - Optional: add the Workshop URL to the GitHub README
+   - Keep GitHub as source of truth: https://github.com/Never-lab/modern-pressure-eu
+
+Author profile: https://steamcommunity.com/id/JustNever_/
